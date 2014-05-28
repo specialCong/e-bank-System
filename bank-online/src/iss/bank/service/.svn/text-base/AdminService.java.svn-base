@@ -1,0 +1,18 @@
+package iss.bank.service;
+
+public interface AdminService {
+
+	//普通用户登录验证   
+	/* (non-Javadoc)
+	 * @see iss.bank.service.impl.UserService#checkUser(java.lang.String, java.lang.String)
+	 */
+	/* (non-Javadoc)
+	 * @see iss.bank.service.impl.UserService#checkUser(java.lang.String, java.lang.String)
+	 */
+	/* (non-Javadoc)
+	 * @see iss.bank.service.impl.AdminService#checkUser(java.lang.String, java.lang.String)
+	 */
+	@SuppressWarnings("unchecked")
+	public abstract boolean checkAdmin(String adminName, String adminPwd);
+
+}

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/dao
+END
+NewsDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/dao/NewsDAO.java
+END
+RecordDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/dao/RecordDAO.java
+END
+UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/dao/UserDAO.java
+END
+OrderlineDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/dao/OrderlineDAO.java
+END
+IBaseHibernateDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/dao/IBaseHibernateDAO.java
+END
+AdminDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/dao/AdminDAO.java
+END
+CardDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/dao/CardDAO.java
+END

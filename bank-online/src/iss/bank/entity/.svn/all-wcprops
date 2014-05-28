@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity
+END
+News.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/News.hbm.xml
+END
+User.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/User.hbm.xml
+END
+Record.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Record.hbm.xml
+END
+Logindate.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Logindate.java
+END
+Orderline.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Orderline.hbm.xml
+END
+Card.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Card.java
+END
+News.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/News.java
+END
+Admin.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Admin.hbm.xml
+END
+Record.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Record.java
+END
+Adminlog.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Adminlog.hbm.xml
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/User.java
+END
+Userinfo.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Userinfo.hbm.xml
+END
+Orderline.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Orderline.java
+END
+Admin.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Admin.java
+END
+Logindate.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Logindate.hbm.xml
+END
+Adminlog.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Adminlog.java
+END
+Userinfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Userinfo.java
+END
+Card.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/106021/OuterSVN/WuHan/WH0WHUU02/11_02_22/%E7%BD%91%E4%B8%8A%E9%93%B6%E8%A1%8C%E7%B3%BB%E7%BB%9F/team1/DevLib/05_Implement/01_Coding/bank-online/src/iss/bank/entity/Card.hbm.xml
+END

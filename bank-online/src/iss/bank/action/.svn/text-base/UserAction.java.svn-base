@@ -1,0 +1,62 @@
+package iss.bank.action;   
+
+import iss.bank.service.impl.UserServiceImpl;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class UserAction extends ActionSupport{   
+
+    private String userLoginname;
+    private String userPwd;
+//    public UserService getUserService() {
+//        return userServiceImpl;
+//    }
+//    public void setUserService(UserService userServiceImpl) {
+//        this.userServiceImpl = userServiceImpl;
+//    }   
+
+    private UserServiceImpl userServiceImpl;   
+
+
+
+	public UserServiceImpl getUserServiceImpl() {
+		return userServiceImpl;
+	}
+	public void setUserServiceImpl(UserServiceImpl userServiceImpl) {
+		this.userServiceImpl = userServiceImpl;
+	}
+	public String getUserLoginname() {
+       return userLoginname;
+    }
+    public void setUserLoginname(String userLoginname) {
+       this.userLoginname = userLoginname;
+    }
+    public String getUserPwd() {
+       return userPwd;
+    }
+    public void setUserPwd(String userPwd) {
+       this.userPwd = userPwd;
+    }   
+
+//   public String execute(){
+//     String page = "FAILURE";   
+//     boolean flag = false;   
+//     flag = personManage.checkUser(userLoginname, userPwd);   
+//     if(flag){   
+//      page = "SUCCESS";   
+//     }   
+//     return page;   
+//        return "";   
+//	}   
+
+    public String login(){
+           String page = "FAILURE";
+           boolean flag = false;
+           flag = userServiceImpl.checkUser(userLoginname, userPwd);
+           if(flag){
+            page = "SUCCESS";
+           }
+           return page;
+    }   
+
+}  

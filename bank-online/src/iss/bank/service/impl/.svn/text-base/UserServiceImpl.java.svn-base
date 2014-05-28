@@ -1,0 +1,32 @@
+package iss.bank.service.impl;   
+
+import java.util.*;
+
+import org.hibernate.Query;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+import iss.bank.entity.User;
+import iss.bank.service.UserService;
+
+
+  public class UserServiceImpl extends HibernateDaoSupport implements UserService  {
+    //普通用户登录验证   
+    /* (non-Javadoc)
+	 * @see iss.bank.service.impl.UserService#checkUser(java.lang.String, java.lang.String)
+	 */
+    /* (non-Javadoc)
+	 * @see iss.bank.service.impl.UserService#checkUser(java.lang.String, java.lang.String)
+	 */
+    @SuppressWarnings("unchecked")
+    public boolean checkUser(String userLoginname,String userPwd){
+       boolean flag = false;
+      String hql = "from User as user where user.userLoginname = '"              +userLoginname+"' and user.userPwd = '"+userPwd+"'";
+      List<User> userList = this.getHibernateTemplate().find(hql);
+       if(userList.size()>0){
+        flag = true;
+       }
+       return flag;
+    }
+} 
+
+
+

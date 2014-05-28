@@ -1,0 +1,89 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+
+    <!-- 指定Web应用的默认编码集,相当于调用HttpServletRequest的setCharacterEncoding方法 -->  
+    <constant name="struts.i18n.encoding" value="UTF-8" />  
+    <!-- 设置浏览器是否缓存静态内容,默认值为true(生产环境下使用),开发阶段最好关闭 -->  
+    <constant name="struts.serve.static.browserCache" value="false" />  
+    <!-- 当struts的配置文件修改后,系统是否自动重新加载该文件,默认值为false(生产环境下使用),开发阶段最好打开 -->  
+    <constant name="struts.configuration.xml.reload" value="true" />  
+    <!-- 开发模式下使用,这样可以打印出更详细的错误信息 -->  
+    <constant name="struts.devMode" value="true" />  
+    <!-- 默认的视图主题 -->  
+    <constant name="struts.ui.theme" value="simple" />  
+    <!-- 把action对象交给spring创建 -->  
+    <constant name="struts.objectFactory" value="spring" />  
+
+    
+    <!--导入struts-default.xml文件 -->  
+    <include file="struts-default.xml"></include>
+    
+    
+    
+    <!-- 配置Action -->  
+    <package name="default" extends="struts-default" >
+    <!-- 用户配置 -->
+    
+    <!--用户登录 -->
+		<action name="userLogin" class="iss.bank.action.UserAction" method="login">
+			<result name="input">/Login.jsp
+			</result>
+			<result name="SUCCESS" type="redirect">
+			gotoViewUser.action
+			</result>
+		</action>
+		<!--用户登录 2 -->
+		<action name="gotoViewUser" class="iss.bank.action.GotoViewUserAction">
+			<result name="success">/viewUser.jsp
+			</result>
+		</action>
+    
+    
+<!--    用户登录  -->
+<!--        <action name="userLogin" class="iss.bank.action.UserAction" method="login">-->
+<!--            <result name="FAILURE">/Login.jsp </result>-->
+<!--            <result name="SUCCESS">/success.jsp</result>-->
+<!--        </action>-->
+        		
+     <!--查看用户信息  -->
+        <action name="viewUser" class="iss.bank.action.ViewUserAction">
+            <result name="success">/updateUser.jsp
+			</result>
+        </action>	
+        
+      <!--用户信息修改 -->   
+    	<action name="userUpdate" class="iss.bank.action.UserUpdateAction">
+           <result name="success" type="redirect">
+				gotoViewUser.action
+			</result>
+			<result name="input">/updateUser.jsp</result>
+        </action>  
+        
+      <!-- 用户注册 -->    
+        <action name="userRegist" class="iss.bank.action.UserAction" method="register">
+            <result name="FAILURE">/UserRegister/RegisterFailure.jsp </result>
+            <result name="SUCCESS">/UserRegister/success.jsp</result>
+        </action>	
+        
+       
+      
+      
+     <!-- 管理员配置 -->   
+	<!-- 管理员登陆 -->	 
+		  <action name="adminLogin" class="iss.bank.action.AdminAction" method="adminlogin">
+            <result name="FAILURE">/failure.jsp </result>
+            <result name="SUCCESS">/success.jsp</result>
+        </action>	
+    <!--删除用户  -->  
+        <action name="delUserAction" class="iss.bank.action.DeleteUserAction" method="delete">
+            <result name="FAILURE">/failure.jsp </result>
+            <result name="SUCCESS">/success.jsp</result>
+        </action>
+ 
+        
+    </package>
+   
+</struts> 

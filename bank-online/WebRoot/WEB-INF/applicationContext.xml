@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url" value="jdbc:mysql://localhost:3306/bank"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="root"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>iss/bank/entity/User.hbm.xml</value>
+				<value>iss/bank/entity/Record.hbm.xml</value>
+				<value>iss/bank/entity/Orderline.hbm.xml</value>
+				<value>iss/bank/entity/News.hbm.xml</value>
+				<value>iss/bank/entity/Logindate.hbm.xml</value>
+				<value>iss/bank/entity/Card.hbm.xml</value>
+				<value>iss/bank/entity/Adminlog.hbm.xml</value>
+				<value>iss/bank/entity/Admin.hbm.xml</value></list>
+		</property></bean>
+
+<!-- dao配置 -->
+
+	<bean name="userDAO" class="iss.bank.dao.impl.UserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="adminDAO" class="iss.bank.dao.impl.AdminDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="cardDAO" class="iss.bank.dao.impl.CardDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="recordDAO" class="iss.bank.dao.impl.RecordDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="newsDAO" class="iss.bank.dao.impl.NewsDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="orderlineDAO" class="iss.bank.dao.impl.OrderlineDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	
+	<!-- service配置 -->
+	<bean name="userService" class="iss.bank.service.impl.UserServiceImpl">
+		<property name="userDAO" ref="userDAO"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- 配置ViewUserAction -->	
+	<bean name="viewUserAction" class="iss.bank.action.ViewUserAction">
+		<property name="userService" ref="userService"></property>
+	</bean>
+	
+	
+	<!-- 配置（跳转） -->
+	<bean name="gotoViewUser" class="iss.bank.action.GotoViewUserAction">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	
+	<!-- 配置UserUpdateAction -->	
+	<bean name="userUpdate" class="iss.bank.action.UserUpdateAction">
+		<property name="userService" ref="userService"></property>
+	</bean>
+	
+	
+	<!-- 配置UserAction,包含原注册Action  -->
+    <bean id="userAction" class="iss.bank.action.UserAction"     scope="prototype">
+           <property name="userService">
+               <ref bean="userService" />
+           </property>
+    </bean>   
+
+
+    
+    
+    
+    <!-- 配置AdminAction -->	
+    <bean id="adminServiceImpl" class="iss.bank.service.impl.AdminServiceImpl"       abstract="false" lazy-init="default" autowire="default"        dependency-check="default" scope="prototype">
+       <property name="sessionFactory" >
+        <ref local="sessionFactory"/>
+       </property>
+    </bean>
+    <bean id="adminAction" class="iss.bank.action.AdminAction"     scope="prototype">
+           <property name="adminServiceImpl">
+               <ref bean="adminServiceImpl" />
+           </property>
+    </bean>   
+    <bean id="DeleteUserAction" class="iss.bank.action.DeleteUserAction"     scope="prototype">
+           <property name="adminServiceImpl">
+               <ref bean="adminServiceImpl" />
+           </property>
+    </bean>
+    
+</beans>

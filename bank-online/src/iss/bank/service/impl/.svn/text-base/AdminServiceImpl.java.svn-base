@@ -1,0 +1,37 @@
+package iss.bank.service.impl;   
+
+import iss.bank.entity.Admin;
+import iss.bank.service.AdminService;
+
+import java.util.List;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+
+  public class AdminServiceImpl extends HibernateDaoSupport implements AdminService {
+    //管理员登录验证   
+    /* (non-Javadoc)
+	 * @see iss.bank.service.impl.UserService#checkUser(java.lang.String, java.lang.String)
+	 */
+    /* (non-Javadoc)
+	 * @see iss.bank.service.impl.UserService#checkUser(java.lang.String, java.lang.String)
+	 */
+    /* (non-Javadoc)
+	 * @see iss.bank.service.impl.AdminService#checkUser(java.lang.String, java.lang.String)
+	 */
+    /* (non-Javadoc)
+	 * @see iss.bank.service.impl.AdminService#checkAdmin(java.lang.String, java.lang.String)
+	 */
+    @SuppressWarnings("unchecked")
+    public boolean checkAdmin(String adminName,String adminPwd){
+       boolean flag = false;
+      String hql = "from Admin as admin where admin.adminName = '"              +adminName+"' and admin.adminPwd = '"+adminPwd+"'";
+      List<Admin> adminList = this.getHibernateTemplate().find(hql);
+       if(adminList.size()>0){
+        flag = true;
+       }
+       return flag;
+    }
+} 
+
+
+

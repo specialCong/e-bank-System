@@ -1,0 +1,63 @@
+package iss.bank.action;   
+
+import iss.bank.service.AdminService;
+import iss.bank.service.impl.AdminServiceImpl;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class AdminAction extends ActionSupport{   
+
+    private String adminName;
+    private String adminPwd;
+//    public UserService getUserService() {
+//        return userServiceImpl;
+//    }
+//    public void setUserService(UserService userServiceImpl) {
+//        this.userServiceImpl = userServiceImpl;
+//    }   
+
+    private AdminServiceImpl adminServiceImpl;   
+    
+	public AdminServiceImpl getAdminServiceImpl() {
+		return adminServiceImpl;
+	}
+	public void setAdminServiceImpl(AdminServiceImpl adminServiceImpl) {
+		this.adminServiceImpl = adminServiceImpl;
+	}
+
+	public String getAdminName() {
+		return adminName;
+	}
+	public void setAdminName(String adminName) {
+		this.adminName = adminName;
+	}
+	public String getAdminPwd() {
+		return adminPwd;
+	}
+	public void setAdminPwd(String adminPwd) {
+		this.adminPwd = adminPwd;
+	}
+
+
+//   public String execute(){
+//     String page = "FAILURE";   
+//     boolean flag = false;   
+//     flag = personManage.checkUser(userLoginname, userPwd);   
+//     if(flag){   
+//      page = "SUCCESS";   
+//     }   
+//     return page;   
+//        return "";   
+//	}   
+
+    public String adminlogin(){
+           String page = "FAILURE";
+           boolean flag = false;
+           flag = adminServiceImpl.checkAdmin(adminName, adminPwd);
+           if(flag){
+            page = "SUCCESS";
+           }
+           return page;
+    }   
+
+}  

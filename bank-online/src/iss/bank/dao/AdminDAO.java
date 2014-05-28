@@ -1,0 +1,38 @@
+package iss.bank.dao;
+
+import iss.bank.entity.Admin;
+import iss.bank.entity.User;
+
+import java.util.List;
+
+public interface AdminDAO {
+
+	// property constants
+	public static final String ADMIN_NAME = "adminName";
+	public static final String ADMIN_PWD = "adminPwd";
+
+	public abstract void save(Admin transientInstance);
+
+	public abstract void delete(Admin persistentInstance);
+
+	public abstract Admin findById(java.lang.Integer id);
+
+	public abstract List findByExample(Admin instance);
+
+	public abstract List findByProperty(String propertyName, Object value);
+
+	public abstract List findByAdminName(Object adminName);
+
+	public abstract List findByAdminPwd(Object adminPwd);
+
+	public abstract User findByNamePwd(String name, String pwd);
+
+	public abstract List findAll();
+
+	public abstract Admin merge(Admin detachedInstance);
+
+	public abstract void attachDirty(Admin instance);
+
+	public abstract void attachClean(Admin instance);
+
+}

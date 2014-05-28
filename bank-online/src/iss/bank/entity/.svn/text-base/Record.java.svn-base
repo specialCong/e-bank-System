@@ -1,0 +1,81 @@
+package iss.bank.entity;
+
+/**
+ * Record entity. @author MyEclipse Persistence Tools
+ */
+
+public class Record implements java.io.Serializable {
+
+	// Fields
+
+	private Integer recordId;
+	private Double recordAmount;
+	private String recordState;
+	private String recordDate;
+	private Integer cardId;
+
+	// Constructors
+
+	/** default constructor */
+	public Record() {
+	}
+
+	/** minimal constructor */
+	public Record(Double recordAmount, String recordState, String recordDate) {
+		this.recordAmount = recordAmount;
+		this.recordState = recordState;
+		this.recordDate = recordDate;
+	}
+
+	/** full constructor */
+	public Record(Double recordAmount, String recordState, String recordDate,
+			Integer cardId) {
+		this.recordAmount = recordAmount;
+		this.recordState = recordState;
+		this.recordDate = recordDate;
+		this.cardId = cardId;
+	}
+
+	// Property accessors
+
+	public Integer getRecordId() {
+		return this.recordId;
+	}
+
+	public void setRecordId(Integer recordId) {
+		this.recordId = recordId;
+	}
+
+	public Double getRecordAmount() {
+		return this.recordAmount;
+	}
+
+	public void setRecordAmount(Double recordAmount) {
+		this.recordAmount = recordAmount;
+	}
+
+	public String getRecordState() {
+		return this.recordState;
+	}
+
+	public void setRecordState(String recordState) {
+		this.recordState = recordState;
+	}
+
+	public String getRecordDate() {
+		return this.recordDate;
+	}
+
+	public void setRecordDate(String recordDate) {
+		this.recordDate = recordDate;
+	}
+
+	public Integer getCardId() {
+		return this.cardId;
+	}
+
+	public void setCardId(Integer cardId) {
+		this.cardId = cardId;
+	}
+
+}

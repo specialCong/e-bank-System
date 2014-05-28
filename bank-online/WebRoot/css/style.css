@@ -1,0 +1,35 @@
+body{text-align:center;}
+#container{width:950px;margin:0 auto; margin-top:50px;}
+#header{width:100%;height:100px;border:1px #FFD700 solid;border-bottom:1px #b8e61d solid;background-image:url("../images/wb_logo.png");background-repeat:no-repeat;}
+#banner{width:100%;height:60px;text-align:right}
+#banner span{font-size:22px;font-weight:bold;line-height:60px;padding-right:20px;color:#aaa}
+#nav{width:100%;height:40px;text-align:right}
+#nav ul{list-style:none;margin:0;padding:0;}
+#nav ul li{float:right;margin-left:5px;height:40px;width:100px;text-align:center;
+		font-size:18px;line-height:40px;background-color:#ffff4f;cursor:pointer}
+#nav ul li.selected{font-weight:bold;background-color:#b8e61d}
+#content{width:100%;height:400px;}
+#content_top{width:100%;height:30px;}
+#left{width:290px;height:370px;float:left;text-align:center;}
+.left_container{width:220px;height:320px;margin:20px auto;display:none;}
+.left_select{display:block;}
+.left_container p{border-bottom:1px #111 solid;height:40px;line-height:40px;font-size:20px;font-weight:bold;margin-bottom:30px;}
+.left_container .field{height:45px;text-align:left}
+.left_container .label{width:80px;text-align:right}
+.left_container input{width:140px;height:20px;background-color:#F5F5F5}
+.left_container input#check_image{width:70px}
+.left_container span.check_image{width:60px;border:1px #111 solid;margin-left:8px;}
+.left_container input.button{width:60px;height:24px;float:left;margin-left:35px;}
+.left_container .link{font-size:13px;}
+.left_container .link a{margin:0px 10px}
+#right{width:655px;height:370px;float:right;border-right:1px #FFD700 solid;overflow:auto}
+#right_bottom{width:100%;height:360px;text-align:left}
+#right_bottom p{color:red;margin:50px 10px 10px;font-size:15px;font-weight:bold}
+#right_bottom ul li{height:30px;line-height:30px;font-size:13px;color:#333;list-style:none}
+#footer{width:100%;height:60px;background-color:#ffff4f;font-size:13px;color:#666}
+#footer pre{margin:10px;}
+.selected_color{background-color:#b8e61d}
+
+#myinfo table{ widtd:600px; margin:20px auto;  text-align:center; font-size:14px}
+.tdead1{ background:#ffff4f; height:35px;}
+#myinfo table td{  border-bottom:1px solid #CCC; border-right:1px solid #CCC; height:30px;}
